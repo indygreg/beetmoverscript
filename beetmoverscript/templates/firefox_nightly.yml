@@ -101,6 +101,11 @@ mapping:
       destinations:
         - {{ upload_date }}-{{ branch }}/firefox-{{ version }}.{{ locale }}.{{ platform }}.web-platform.tests.tar.gz
         - latest-{{ branch }}/firefox-{{ version }}.{{ locale }}.{{ platform }}.web-platform.tests.tar.gz
+    target.web-platform.tests.zip:
+      s3_key: firefox-{{ version }}.{{ locale }}.{{ platform }}.web-platform.tests.zip
+      destinations:
+        - {{ upload_date }}-{{ branch }}/firefox-{{ version }}.{{ locale }}.{{ platform }}.web-platform.tests.zip
+        - latest-{{ branch }}/firefox-{{ version }}.{{ locale }}.{{ platform }}.web-platform.tests.zip
     target.xpcshell.tests.zip:
       s3_key: firefox-{{ version }}.{{ locale }}.{{ platform }}.xpcshell.tests.zip
       destinations:

@@ -80,6 +80,10 @@ mapping:
       s3_key: fennec-{{ version }}.{{ locale }}.android-arm.web-platform.tests.tar.gz
       destinations:
         - {{ platform }}/{{ locale }}/fennec-{{ version }}.{{ locale }}.android-arm.web-platform.tests.tar.gz
+    target.web-platform.tests.zip:
+      s3_key: fennec-{{ version }}.{{ locale }}.android-arm.web-platform.tests.zip
+      destinations:
+        - {{ platform }}/{{ locale }}/fennec-{{ version }}.{{ locale }}.android-arm.web-platform.tests.zip
     target.xpcshell.tests.zip:
       s3_key: fennec-{{ version }}.{{ locale }}.android-arm.xpcshell.tests.zip
       destinations:

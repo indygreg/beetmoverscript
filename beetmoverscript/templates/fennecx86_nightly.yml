@@ -99,6 +99,11 @@ mapping:
       destinations:
         - latest-{{ branch }}-{{ platform }}/{{ locale_prefix }}fennec-{{ version }}.{{ locale }}.android-i386.web-platform.tests.tar.gz
         - {{ upload_date }}-{{ branch }}-{{ platform }}/{{ locale_prefix }}fennec-{{ version }}.{{ locale }}.android-i386.web-platform.tests.tar.gz
+    target.web-platform.tests.zip:
+      s3_key: fennec-{{ version }}.{{ locale }}.android-i386.web-platform.tests.zip
+      destinations:
+        - latest-{{ branch }}-{{ platform }}/{{ locale_prefix }}fennec-{{ version }}.{{ locale }}.android-i386.web-platform.tests.zip
+        - {{ upload_date }}-{{ branch }}-{{ platform }}/{{ locale_prefix }}fennec-{{ version }}.{{ locale }}.android-i386.web-platform.tests.zip
     target.xpcshell.tests.zip:
       s3_key: fennec-{{ version }}.{{ locale }}.android-i386.xpcshell.tests.zip
       destinations:
